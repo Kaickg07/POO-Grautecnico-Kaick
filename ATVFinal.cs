@@ -140,6 +140,21 @@ namespace ATVFinal
             {
                 Console.WriteLine(e.ListarEmprestimos());
             }
+                var ranking = todosEmprestimos
+            .GroupBy(e => e.Livro.Nome)
+            .Select(g => new 
+            {
+                Livro = g.Key,
+                TotalEmprestimos = g.Count()
+            })
+            .OrderByDescending(r => r.TotalEmprestimos);
+
+            Console.WriteLine("\n--- RANKING DOS LIVROS MAIS EMPRESTADOS ");
+            
+            foreach (var item in ranking)
+            {
+                Console.WriteLine($"Livro: {item.Livro} - Empréstimos: {item.TotalEmprestimos}");
+            }
 
         }
     }
