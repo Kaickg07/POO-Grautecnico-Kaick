@@ -149,7 +149,7 @@ namespace ATVFinal
             })
             .OrderByDescending(r => r.TotalEmprestimos);
 
-            Console.WriteLine("\n--- RANKING DOS LIVROS MAIS EMPRESTADOS ");
+            Console.WriteLine("\nRANKING DOS LIVROS MAIS EMPRESTADOS:");
             
             foreach (var item in ranking)
             {
