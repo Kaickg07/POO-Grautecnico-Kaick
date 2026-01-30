@@ -141,7 +141,7 @@ namespace ATVFinal
             {
                 Console.WriteLine(e.ListarEmprestimos());
             }
-                var ranking = todosEmprestimos
+            var ranking = todosEmprestimos
             .GroupBy(e => e.Livro.Nome)
             .Select(g => new 
             {
