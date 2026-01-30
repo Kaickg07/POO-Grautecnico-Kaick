@@ -87,8 +87,8 @@ namespace ATVFinal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Sistema da biblioteca iniciando...");
-            Console.WriteLine("BEM VINDO A BIBLIOTECA");
+            Console.WriteLine("\nSistema da biblioteca iniciando...");
+            Console.WriteLine("\nBEM VINDO A BIBLIOTECA");
 
 
             Cliente meucliente1 = new Cliente("Kaick Gomes","143.976.546-43","(83)4002-8922","Rua João Pessoa","Kaickgomes3@gmail.com");
@@ -123,19 +123,19 @@ namespace ATVFinal
             Emprestimo meuemprestimo9 = new Emprestimo(meulivro10,meucliente9,7);
             Emprestimo meuemprestimo10 = new Emprestimo(meulivro8,meucliente10,4);
 
-            Console.WriteLine("CLIENTES CADASTRADOS:");
+            Console.WriteLine("\nCLIENTES CADASTRADOS:");
             Cliente [] todosClientes = {meucliente1,meucliente2,meucliente3,meucliente4,meucliente5,meucliente6,meucliente7,meucliente8,meucliente9,meucliente10};
             foreach (var c in todosClientes)
             {
                 Console.WriteLine(c.ListarCliente());
             }
-            Console.WriteLine("LIVROS CADASTRADOS:");
+            Console.WriteLine("\nLIVROS CADASTRADOS:");
             Livro [] todosLivros = {meulivro1,meulivro2,meulivro3,meulivro4,meulivro5,meulivro6,meulivro7,meulivro8,meulivro9,meulivro10};
             foreach (var l in todosLivros)
             {
                 Console.WriteLine(l.ListarLivro());
             }
-            Console.WriteLine("LISTA DE EMPRESTIMOS:");
+            Console.WriteLine("\nLISTA DE EMPRESTIMOS:");
             Emprestimo [] todosEmprestimos = {meuemprestimo1,meuemprestimo2,meuemprestimo3,meuemprestimo4,meuemprestimo5,meuemprestimo6,meuemprestimo7,meuemprestimo8,meuemprestimo9,meuemprestimo10};
             foreach (var e in todosEmprestimos)
             {
